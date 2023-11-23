@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/estilos.css" />
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<title>Alimento Consciente</title>
+	</head>
+	<body>	
+		<div class="linha">
+			<div id="dvlogo" class="col-lg-12 meio">
+				<img src="./imagemsite/eteclogo.png" height="100px" width="380px">
+			</div>
+		</div>
+		<div class="linha">
+			<div class="col-lg-12 titulo corvermelho meio centro negrito">
+				Não ao desperdício da merenda escolar!
+			</div>
+		</div>
+		<div class="linha">
+			<div class="col-lg-1">
+				&nbsp;
+			</div>
+			<div class="col-lg-10 conteudo">
+			</div>
+			<div>
+				<form action='api-url-here' method='post' encType="multipart/form-data">
+					<br>
+					<input class="file-chooser" type="file" name="cardapiopng" value="upload">
+					<br>
+					<img class="preview-img">
+				</form>
+				<script>
+					const $ = document.querySelector.bind(document);
+					const previewImg = $('.preview-img');
+					const fileChooser = $('.file-chooser');
+
+					fileChooser.onchange = e => {
+						const fileToUpload = e.target.files.item(0);
+						const reader = new FileReader();
+
+						// evento disparado quando o reader terminar de ler 
+						reader.onload = e => previewImg.src = e.target.result;
+
+						// solicita ao reader que leia o arquivo 
+						// transformando-o para DataURL. 
+						// Isso disparará o evento reader.onload.
+						reader.readAsDataURL(fileToUpload);
+					};
+				</script>
+			</div>
+			<div class="col-lg-1">
+				&nbsp;
+			</div>
+		</div>
+		<div class="linha">
+			<div class="col-lg-12 centro meio rodape">
+				 &copy; 2023 Alimento Consciente. Todos os direitos reservados&reg;
+			</div>
+		</div>
+	</body>
+</html>

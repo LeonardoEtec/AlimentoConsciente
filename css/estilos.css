@@ -1,0 +1,203 @@
+/* Coisa basica para se fazer antes de comesar o site */
+body {
+	margin: auto;
+	padding: 0px;
+	font-family: Calibri;
+	font-size: 14px;
+}
+/* dv para formatação texto */
+
+#dvlogo {
+	font-size: 20px;
+	height: 100px;
+}
+
+/* Formatação das colunas para responsavidade */
+.col-lg-1 {
+	width: 8.33%;
+	float: left;
+}
+
+.col-lg-2 {
+	width: 16.66%;
+	float: left;
+}
+
+.col-lg-3 {
+	width: 25%;
+	float: left;
+}
+
+.col-lg-4 {
+	width: 33.33%;
+	float: left;
+}
+
+.col-lg-5 {
+	width: 41.66%;
+	float: left;
+}
+
+.col-lg-6 {
+	width: 50%;
+	float: left;
+}
+
+.col-lg-7 {
+	width: 58.33%;
+	float: left;
+}
+
+.col-lg-8 {
+	width: 66.66%;
+	float: left;
+}
+
+.col-lg-9 {
+	width: 75%;
+	float: left;
+}
+
+.col-lg-10 {
+	width: 83.33%;
+	float: left;
+}
+
+.col-lg-11 {
+	width: 91.66%;
+	float: left;
+}
+
+.col-lg-12 {
+	width: 100%;
+	float: left;
+}
+
+/* Formatações */
+
+.negrito {
+	font-weight: bold;
+}
+
+	/* Alinhamento Horizontal */
+.esquerda {
+	text-align: left;
+}
+
+.centro {
+	text-align: center;
+}
+
+.direita {
+	text-align: right;
+}
+
+.justificado {
+	text-align: justify;
+}
+	/* End */
+
+	/* Alinhamento Vertical */
+.topo {
+	vertical-align: top;
+}
+
+.meio {
+	vertical-align: middle;
+}
+
+.abaixo {
+	vertical-align: bottom;
+}
+
+/*  */
+.linha {
+	width: 100%;
+	height: 20px;
+}
+
+/* Cores de fundo */
+.corpreto {
+	background-color: #000000;
+}
+.corbranco {
+	background-color: #ffffff;
+}
+
+.corazul {
+	background-color: #1E90FF;
+}
+
+.corvermelho {
+	background-color: #B22222;
+}
+
+/* Edições mais específicas */
+.titulo {
+	height: 50px;
+	color: #ffffff;
+	font-size: 30px;
+	font-family: calibri;
+	padding-top: 10px;
+}
+
+.formulario {
+	font-size: 16px;
+	font-family: Calibri;
+	border-radius: 10px;
+	height: 500px;
+	background-color: #B0C4DE;
+}
+
+.conteudo {
+	font-size: 18px;
+	font-family: Calibri;
+	border-radius: 10px;
+	height: 300px;
+}
+
+.rodape {
+	height: 16px;
+	font-size: 14px;
+	font-family: Calibri;
+	background-color: #363636;
+	color: #ffffff;
+}
+
+#tabelacor {
+	background-color: #ffffff;
+}
+
+button[type=button]{
+    background-color: #B0C4DE;
+    height: 30px;
+    outline: 0;
+    cursor: pointer;
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+input[type=reset]{
+    background-color: #ffffff;
+    height: 30px;
+    outline: 0;
+    cursor: pointer;
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.preview-img {
+	height: 400px;
+	width: 1000px;
+}
+ /* Responsividade tela */
+ 
+@media only screen and (max-device-width: 900px) {
+	.tela {width:100%; }
+}
+
+@media only screen and (max-device-width: 700px) {
+	.tela {width:400px; }
+}
